@@ -5,25 +5,25 @@ document.addEventListener('DOMContentLoaded', function () {
 	const allSections = document.querySelectorAll('.section');
 
 	window.onscroll = () => {
-        
-        allSections.forEach((sec) => {
-            const top = Math.floor(window.scrollY);
+		allSections.forEach((sec) => {
+			const top = Math.floor(window.scrollY);
 			const id = sec.getAttribute('id');
 			const offset = sec.offsetTop - 84;
 			const height = sec.offsetHeight;
-            const totalScr = document.documentElement.scrollHeight - window.innerHeight
+			const totalScr =
+				document.documentElement.scrollHeight - window.innerHeight;
 			if (top >= offset && top < offset + height) {
 				allNavItems.forEach((link) => {
 					link.classList.remove('active');
-                    if(top + 5 > totalScr){
-                        document
-					.querySelector('.nav-link[href*=contact]')
-					.classList.add('active')
-                    } else {
-                        document
-                            .querySelector('.nav-link[href*=' + id + ']')
-                            .classList.add('active');
-                    }
+					if (top + 5 > totalScr) {
+						document
+							.querySelector('.nav-link[href*=contact]')
+							.classList.add('active');
+					} else {
+						document
+							.querySelector('.nav-link[href*=' + id + ']')
+							.classList.add('active');
+					}
 				});
 			}
 		});
