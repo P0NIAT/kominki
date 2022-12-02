@@ -99,7 +99,7 @@
 }
 
 html {
-  scroll-padding-top: 82px;
+  scroll-padding-top: 81px;
 }
 
 body {
@@ -376,6 +376,7 @@ header .fa-chevron-down {
 
 .contact {
   position: relative;
+  /* height: 60vh; */
   background-image: url(../img/skyline-1869214_1920.jpg);
   background-attachment: fixed;
   background-position: center;
