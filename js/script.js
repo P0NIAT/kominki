@@ -43,3 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	window.addEventListener('scroll', addShadow);
 });
+
+const footerYear = document.querySelector('.footer_year');
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear();
+	footerYear.innerText = year;
+};
+handleCurrentYear();
+
+navBtn.addEventListener('click', handleNav);
