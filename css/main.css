@@ -99,7 +99,7 @@
 }
 
 html {
-  scroll-padding-top: 82px;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -127,7 +127,8 @@ h2 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.btn-action, .btn-action-two {
+.btn-action,
+.btn-action-two {
   padding: 15px 30px;
   margin-top: 20px;
   background-color: #cba922;
@@ -189,7 +190,7 @@ header p {
 }
 header .hero-img {
   position: relative;
-  height: 60vh;
+  height: 80vh;
   background-image: url("../img/porch-1967855_640.jpg");
   background-position: bottom;
   background-size: cover;
@@ -266,7 +267,9 @@ header .fa-chevron-down {
   background-color: rgba(0, 0, 0, 0.75);
   z-index: -5;
 }
-.aboutus-hero .fa-house-chimney, .aboutus-hero .fa-trowel-bricks2, .aboutus-hero .fa-screwdriver-wrench {
+.aboutus-hero .fa-house-chimney,
+.aboutus-hero .fa-trowel-bricks2,
+.aboutus-hero .fa-screwdriver-wrench {
   color: #cba922;
 }
 .aboutus-hero .aboutus-hero-item {

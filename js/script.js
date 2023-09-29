@@ -29,19 +29,19 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	};
 
-	function addShadow() {
-		if (window.scrollY >= 300) {
-			nav.classList.add('shadow-bg');
-		} else {
-			nav.classList.remove('shadow-bg');
-		}
-	}
+	// function addShadow() {
+	// 	if (window.scrollY >= 300) {
+	// 		nav.classList.add('shadow-bg');
+	// 	} else {
+	// 		nav.classList.remove('shadow-bg');
+	// 	}
+	// }
 
 	allNavItems.forEach((item) =>
 		item.addEventListener('click', () => navList.classList.remove('show'))
 	);
 
-	window.addEventListener('scroll', addShadow);
+	// window.addEventListener('scroll', addShadow);
 });
 
 const footerYear = document.querySelector('.footer_year');
@@ -50,5 +50,3 @@ const handleCurrentYear = () => {
 	footerYear.innerText = year;
 };
 handleCurrentYear();
-
-navBtn.addEventListener('click', handleNav);
